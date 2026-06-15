@@ -2,7 +2,7 @@ package RestaurantBill;
 
 import java.util.Scanner;
 
-public class RestaurantBill_2 {
+public class RestaurantBill_3 {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
@@ -32,10 +32,23 @@ public class RestaurantBill_2 {
         System.out.println();
         System.out.print("Enter "+item1_name+" quantity: ");
         item1_qty = scanner.nextInt();
+        if(item1_qty<0 || item1_qty>10){
+            System.out.println("Invalid quantity");
+            item1_qty = 0;
+        }
         System.out.print("Enter "+item2_name+" quantity: ");
         item2_qty = scanner.nextInt();
+        if(item2_qty<0 || item2_qty>10){
+            System.out.println("Invalid quantity");
+            item2_qty = 0;
+        }
         System.out.print("Enter "+item3_name+" quantity: ");
         item3_qty = scanner.nextInt();
+        if(item3_qty<0 || item3_qty>10){
+            System.out.println("Invalid quantity");
+            // item3_qty = 0;
+            System.exit(0);
+        }
 
         // finding bills of each item
         item1_bill = item1_price * item1_qty;
