@@ -1,10 +1,11 @@
-import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 
-public class T2_Generic {
+public class T3_Generic {
     public static void main(String[] args) {
         // college
         // Create and store 3 students
-        ArrayList<Student> students = new ArrayList<>();
+        List<Student> students = new LinkedList<>();
 
         // Create
         students.add(new Student("Ramesh", 121, 89));
