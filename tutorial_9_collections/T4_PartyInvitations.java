@@ -3,12 +3,12 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.Collections;
 
-class Guest{
-    String name;
-}
+// class Guest{
+//     String name;
+// }
 
 class Invitation{
-    private List<Guest> guests = new ArrayList<>();
+    // private List<Guest> guests = new ArrayList<>();
     private List<String> guestList = new ArrayList<>();
 
     // add new guest
