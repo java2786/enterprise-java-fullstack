@@ -122,7 +122,7 @@ public class T6_FriendList{
         System.out.println("Check Dinesh: "+names.indexOf(new Friend("Dinesh", 37)));
         System.out.println("If Dinesh added: "+names.contains(new Friend("Dinesh", 37)));
 
-        // Collections.sort(names);
+        Collections.sort(names, (f1, f2)->f1.getName().compareTo(f2.getName()));
 
         System.out.println(names);
     }
