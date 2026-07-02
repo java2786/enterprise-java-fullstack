@@ -54,7 +54,7 @@ class Item{
 
     
 }
-public class T8_LambdaSorting {
+public class T10_LambdaSorting {
     public static void main(String[] args) {
         List<Item> items = new ArrayList<>();
         items.add(new Item("Pen", 20));
