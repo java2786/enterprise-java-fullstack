@@ -316,31 +316,33 @@ Total Food Expenses: ₹165
 - Handle file not found errors gracefully
 
 ### 2. Date and Time Module
-```python
-# You need to work with dates
-# Example date: 15-04-2024
-# Extract month, year for monthly reports
-# Validate date format
-# Compare dates for filtering
+```java
+// You need to work with dates
+// Example date: 15-04-2024
+// Extract month, year for monthly reports
+// Validate date format
+// Compare dates for filtering
 ```
 
 ### 3. Data Structures
 
 **Lists:** Store multiple expenses
-```python
-# Example structure (you design your own)
-expenses = [expense1, expense2, expense3, ...]
+```java
+// Example structure (you design your own)
+List<Map<String, String>> expenses = new ArrayList<>();
+expenses.add(expense1);
+expenses.add(expense2);
+expenses.add(expense3);
 ```
 
 **Dictionaries:** Store individual expense details
-```python
-# Example structure (you design your own)
-expense = {
-    'date': '15-04-2024',
-    'category': 'Food',
-    'amount': 45,
-    'description': 'Chai and pakora'
-}
+```java
+// Example structure (you design your own)
+Map<String, String> expense = new HashMap<>();
+expense.put('date', '15-04-2024');
+expense.put('category', 'Food');
+expense.put('amount', 45);
+expense.put('description', 'Chai and pakora');
 ```
 
 ### 4. Functions
@@ -529,42 +531,6 @@ Before you start coding:
 - [ ] Create sample test data
 - [ ] Set up your development environment
 - [ ] Create project folder structure
-
----
-
-## Sample Test Cases
-
-Test your program with these scenarios:
-
-**Test Case 1: First Time User**
-- Run program (no existing file)
-- Add first expense
-- Check if file is created
-- Close and reopen - data should persist
-
-**Test Case 2: Multiple Expenses Same Category**
-- Add 5 Food expenses
-- View by Food category
-- Verify all 5 are shown
-- Check total is correct
-
-**Test Case 3: Monthly Summary**
-- Add expenses from sample data (Week 1 + Week 2)
-- Generate monthly summary
-- Verify calculations are correct
-- Check percentages add up to 100%
-
-**Test Case 4: Invalid Inputs**
-- Try entering invalid date format
-- Try entering negative amount
-- Try entering text as amount
-- Try entering invalid menu choice
-- Verify proper error messages
-
-**Test Case 5: Empty Categories**
-- Generate monthly report
-- Check if categories with ₹0 show correctly
-- Verify zero percentage and empty bar
 
 ---
 
