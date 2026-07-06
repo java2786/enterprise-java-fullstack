@@ -1,11 +1,11 @@
 import java.util.ArrayList;
 
-class Student {
+class MyStudent {
     private String name;
     private int roll;
     private int marks;
 
-    public Student(String name, int roll, int marks) {
+    public MyStudent(String name, int roll, int marks) {
         this.name = name;
         this.roll = roll;
         this.marks = marks;
@@ -37,7 +37,7 @@ class Student {
     }
 
     public void showDetails() {
-        System.out.println("Student [name=" + name + ", roll=" + roll + ", marks=" + marks + "]");
+        System.out.println("MyStudent [name=" + name + ", roll=" + roll + ", marks=" + marks + "]");
     }
 
 }
@@ -49,20 +49,20 @@ public class T2_crud {
         ArrayList students = new ArrayList();
 
         // Create
-        students.add(new Student("Ramesh", 121, 89));
-        students.add(new Student("Mahesh", 172, 78));
-        students.add(new Student("Dinesh", 11, 91));
+        students.add(new MyStudent("Ramesh", 121, 89));
+        students.add(new MyStudent("Mahesh", 172, 78));
+        students.add(new MyStudent("Dinesh", 11, 91));
         students.add("Himesh");
 
         // read all
         System.out.println(students);
 
         // read all and find by roll 11
-        Student found = null;
+        MyStudent found = null;
         for (int i = 0; i < students.size(); i++) {
             Object obj = students.get(i);
-            if (obj instanceof Student) {
-                Student std = (Student) obj;
+            if (obj instanceof MyStudent) {
+                MyStudent std = (MyStudent) obj;
                 if (std.getRoll() == 12) {
                     found = std;
                 }
